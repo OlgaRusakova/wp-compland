@@ -42,7 +42,7 @@ define( 'DB_USER', $db_user );
 define( 'DB_PASSWORD', $db_password );
 
 /** Имя сервера MySQL */
-define( 'DB_HOST', $db_host gi);
+define( 'DB_HOST', $db_host );
 
 /** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8' );
