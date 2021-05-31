@@ -25,7 +25,7 @@ $db_password = 'root';
 $db_name = 'dDi4UOBPyL';
 $db_host = 'localhost';
 
-if ($_SERVER ['HTTP_HOST' !=='compland']) {
+if ($_SERVER ['HTTP_HOST'] !== 'compland') {
 	$db_user = 'dDi4UOBPyL';
 	$db_password = 'SqD3D0wlmE';
 	$db_host = 'remotemysql.com';
