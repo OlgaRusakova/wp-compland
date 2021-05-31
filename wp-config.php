@@ -19,17 +19,30 @@
  */
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
+
+$db_user = 'root';
+$db_password = 'root';
+$db_name = 'dDi4UOBPyL';
+$db_host = 'localhost';
+
+if ($_SERVER ['HTTP_HOST' !=='compland']) {
+	$db_user = 'dDi4UOBPyL';
+	$db_password = 'SqD3D0wlmE';
+	$db_host = 'remotemysql.com';
+
+}
+
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', 'dDi4UOBPyL' );
+define( 'DB_NAME', $db_name );
 
 /** Имя пользователя MySQL */
-define( 'DB_USER', 'dDi4UOBPyL' );
+define( 'DB_USER', $db_user );
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', 'SqD3D0wlmE' );
+define( 'DB_PASSWORD', $db_password );
 
 /** Имя сервера MySQL */
-define( 'DB_HOST', 'remotemysql.com' );
+define( 'DB_HOST', $db_host gi);
 
 /** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8' );
